@@ -1,0 +1,6 @@
+{
+  "name": "AI Scam Detector",
+  "description": "A premium cybersecurity platform that detects scams in emails, links, SMS, and QR codes using advanced artificial intelligence.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

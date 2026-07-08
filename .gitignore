@@ -1,0 +1,11 @@
+node_modules/
+build/
+dist/
+coverage/
+.DS_Store
+*.log
+*.sqlite
+*.sqlite3
+.vercel
+.env*
+!.env.example

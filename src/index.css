@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+
+  /* ---- Rust & Off-White Editorial Noir ---- */
+  --color-bg-primary: #0B0A09;       /* Background — near-black noir */
+  --color-bg-card: #161310;          /* Cards */
+  --color-bg-secondary: #201C18;     /* Surface */
+  --color-accent-primary: #B5502C;   /* Primary Accent — Rust */
+  --color-accent-secondary: #B0925F; /* Secondary Accent — Aged Brass */
+  --color-text-primary: #F2ECE3;     /* Off-white */
+  --color-text-muted: #A79A8B;       /* Warm taupe */
+  --color-status-success: #6B8F52;   /* Muted olive-green */
+  --color-status-danger: #C1443B;    /* Deep crimson, distinct from rust */
+  --color-border-custom: rgba(242, 236, 227, 0.07);
+}
+
+body {
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+/* Custom scrollbar to keep layout premium */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-bg-primary);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-border-custom);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-accent-primary);
+}
